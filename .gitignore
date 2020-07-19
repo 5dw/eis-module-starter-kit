@@ -1,0 +1,8 @@
+/public
+node_modules
+/logs
+nohup.out
+.idea
+.vscode
+!.eslintrc.json
+.nyc_output
