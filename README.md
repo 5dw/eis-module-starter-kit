@@ -2,9 +2,9 @@
 This is the starter kit for the EIS system backend. All eis backend modules should be used based on this project.
 
 # Database
-Before using this starter kit, please make sure the mongodb was installed on your system and a database named `eis_db_dev1` was there.
+Before using this starter kit, please make sure the mongodb was installed on your system.
 
-The default database name (and some other parameters) can be changed in the configuration file for each environment.
+The default database name was `eis_db_dev1` which can be changed in the configuration file for each environment.
 
 # Usage
 1. Download the [EIS backend starter kit](https://www.npmjs.com/package/eis-module-starter-kit).
@@ -13,9 +13,9 @@ The default database name (and some other parameters) can be changed in the conf
 4. Run the starter kit project by running '`yarn start`'.
 
 # Try
-1. From the terminal you might will get the following error, please open the mongodb terminal and run these commands to create indexes, and then try to start the server again:
+1. From the terminal you might will get the following error (from the second run), please open the mongodb terminal and run these commands to create indexes, and then try to start the server again:
 	> db.authors.createIndex({Name: 1}, {unique: true, sparse: false})
-	>db.authors.createIndex({id: 1}, {unique: true, sparse: false})
+	> db.authors.createIndex({id: 1}, {unique: true, sparse: false})
 2. From browser try to access following addresses, you will get the response from the interfaces:
     - http://localhost:8000/demo
     - http://localhost:8000/demo/name
