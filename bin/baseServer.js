@@ -1,7 +1,7 @@
 const http = require('http');
 const path = require('path');
 
-function BaseServer(addr, port, env) {
+function BaseServer(addr, port, env, serve = true) {
     process.env.NODE_ENV = env;
 
     /**
@@ -10,14 +10,14 @@ function BaseServer(addr, port, env) {
      */
     let app = require(path.join(__dirname, '../app'));
 
-    app.logger.info('Set env to "' + env + '"');
+    app.logger.info('环境设置为"' + env + '"');
 
     let server = http.createServer(app);
 
     // hook: onServerCreated(app, server)
 
     // as the test framework will start the server automatically so ignore the listen call
-    if (env !== 'test')
+    if (serve)
         server.listen(port, addr);
 
     server.on('error', onError);
@@ -36,11 +36,11 @@ function BaseServer(addr, port, env) {
         // handle specific listen errors with friendly messages
         switch (error.code) {
             case 'EACCES':
-                app.logger.error('Have not enough permission to access the database!');
+                app.logger.error('没有足够的权限连接数据库！');
                 process.exit(1);
                 break;
             case 'EADDRINUSE':
-                app.logger.error("The port " + port + " is in use!");
+                app.logger.error("端口 " + port + " 已经被使用！");
                 process.exit(1);
                 break;
             default:
@@ -55,7 +55,7 @@ function BaseServer(addr, port, env) {
         // hook: onServerStarted(app, server, address, port)
 
         let address = server.address();
-        app.logger.info("Listening on " + address.address + ":" + address.port);
+        app.logger.info("成功开始监听 " + address.address + ":" + address.port);
     }
 
     server.db = app.db;
