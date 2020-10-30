@@ -6,3 +6,5 @@ nohup.out
 .vscode
 !.eslintrc.json
 .nyc_output
+/config/config.bundle.js
+/bin/www_bundle.js
