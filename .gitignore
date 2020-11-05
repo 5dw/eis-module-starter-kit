@@ -8,3 +8,4 @@ nohup.out
 .nyc_output
 /config/config.bundle.js
 /bin/www_bundle.js
+/modules/bundle
