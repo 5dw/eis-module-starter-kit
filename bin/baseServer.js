@@ -34,17 +34,22 @@ function BaseServer(addr, port, env, serve = true) {
         }
 
         // handle specific listen errors with friendly messages
+        let shoudExit = false;
         switch (error.code) {
             case 'EACCES':
                 app.logger.error('没有足够的权限连接数据库！');
-                process.exit(1);
+                shoudExit = true;
                 break;
             case 'EADDRINUSE':
                 app.logger.error("端口 " + port + " 已经被使用！");
-                process.exit(1);
+                shoudExit = true;
                 break;
             default:
                 throw error;
+        }
+
+        if (shoudExit) {
+            process.exit(1);
         }
     }
 
