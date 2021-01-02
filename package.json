@@ -1,6 +1,6 @@
 {
   "name": "eis-module-starter-kit",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "The starter kit for the EIS BE system.",
   "private": false,
   "author": "zhiquan",
@@ -9,8 +9,8 @@
   "scripts": {
     "start": "node ./bin/www_dev",
     "start:prod": "node ./bin/www_prod",
-    "lint:check": "eslint --ext .js bin config core modules test utils",
-    "lint": "eslint --fix --ext .js bin config core modules test utils",
+    "lint:check": "eslint --ext .js bin config modules test utils",
+    "lint": "eslint --fix --ext .js bin config modules test utils",
     "lint:init": "eslint --init",
     "test": "mocha test/**/*.test.js --trace-warnings --exit --bail",
     "cov": "nyc mocha test/cases/full.test.js --trace-warnings  --exit"
