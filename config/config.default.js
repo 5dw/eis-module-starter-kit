@@ -10,12 +10,7 @@ module.exports = {
      * Enabled modules in order.
      * Each one can be a name, or an object with name and path.
      */
-    modules: [
-        {
-            name: 'db',
-            path: 'eis-module-mongodb'
-        },
-    ],
+    modules: [],
 
     // other global configurations.
     baseUrl: '/api',
