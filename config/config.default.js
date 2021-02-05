@@ -11,8 +11,10 @@ module.exports = {
      * Each one can be a name, or an object with name and path.
      */
     modules: [
-        'mongodb',
-        'demo',
+        {
+            name: 'db',
+            path: 'eis-module-mongodb'
+        },
     ],
 
     // other global configurations.
@@ -25,9 +27,4 @@ module.exports = {
 
     cacheTimeout: 24 * 3600 * 1000,
     cookieTimeout: 7 * 24 * 3600 * 1000,
-
-    // configuration for each module
-    demo: {
-        routeRoot: 'demo'
-    },
 }
