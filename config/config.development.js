@@ -1,3 +1,9 @@
 module.exports = {
-    modules: []
+    modules: [
+        {
+            name: 'db',
+            path: 'eis-module-mongodb'
+        },
+        'demo'
+    ]
 }
