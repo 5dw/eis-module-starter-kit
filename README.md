@@ -8,14 +8,13 @@ The default database name was `eis_db_dev1` which can be changed in the configur
 
 # Usage
 1. Download the [EIS backend starter kit](https://www.npmjs.com/package/eis-module-starter-kit).
-2. In the starter kit project, add any modules as you wish by running '`yarn add eis-module-xxx`'. By default the core module and the mongodb module were added to this project already.
+2. In the starter kit project, add any modules as you wish by running '`yarn add eis-module-xxx`'. By default the [core module](https://gitlab.com/eis-modules/eis-module-core) and the [mongodb module](https://gitlab.com/eis-modules/eis-module-mongodb) were added to this project already.
 3. Install dependencies by running '`yarn install`'.
 4. Run the starter kit project by running '`yarn start`'.
 
 # Try
 1. From the terminal you might will get the following error (from the second run), please open the mongodb terminal and run these commands to create indexes, and then try to start the server again:
 	> db.authors.createIndex({Name: 1}, {unique: true, sparse: false})
-
 	> db.authors.createIndex({id: 1}, {unique: true, sparse: false})
 
     These errors are created because the EIS is not creating any needed new indexes automatically, although there's configuration to enable it, for security and performance concern, especially in production env. 
