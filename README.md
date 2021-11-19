@@ -1,3 +1,5 @@
+[中文版说明](./README_CN.md)
+
 # EIS-module-starter-kit
 This is the starter kit for the EIS system backend. All eis backend modules **should** be used base on this project.
 
