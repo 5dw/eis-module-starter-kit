@@ -10,7 +10,7 @@ The default database name was `eis_db_dev1` which can be changed in the configur
 
 # Usage
 1. Download the [EIS backend starter kit](https://www.npmjs.com/package/eis-module-starter-kit).
-2. In the starter kit project, add any modules as you wish by running '`yarn add eis-module-xxx`'. By default the [core module](https://gitlab.com/eis-modules/eis-module-core) and the [mongodb module](https://gitlab.com/eis-modules/eis-module-mongodb) were added to this project already.
+2. In the starter kit project, add any modules as you wish by running '`yarn add eis-module-xxx`'. By default the [core module](https://github.com/eisjs/eis-module-core) and the [mongodb module](https://github.com/eisjs/eis-module-mongodb) were added to this project already.
 3. Install dependencies by running '`yarn install`'.
 4. Run the starter kit project by running '`yarn start`'.
 
