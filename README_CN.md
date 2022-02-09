@@ -6,11 +6,11 @@
 # 数据库
 EIS期望可以使用任意数据库，但目前只实现了MongoDB数据库的模块化封装，因此在使用本项目之前，请确保您已经安装了MongoDB。
 
-开发环境默认的数据库名称为`eis_db_dev1`，但此名称可以通过配置文件针对不同的运行环境进行修改。如需了解更多关于数据MongoDB数据库配置的信息，请访问[eis-module-mongodb](https://gitlab.com/eis-modules/eis-module-mongodb).
+开发环境默认的数据库名称为`eis_db_dev1`，但此名称可以通过配置文件针对不同的运行环境进行修改。如需了解更多关于数据MongoDB数据库配置的信息，请访问[eis-module-mongodb](https://github.com/eisjs/eis-module-mongodb).
 
 # 使用
 1. 下载本项目[EIS backend starter kit](https://www.npmjs.com/package/eis-module-starter-kit).
-2. 如需要添加任何模块，请在项目目录中运行类似命令`yarn add eis-module-xxx`'. 默认情况下[核心模块](https://gitlab.com/eis-modules/eis-module-core) 和[MongoDB模块](https://gitlab.com/eis-modules/eis-module-mongodb) 都已经添加.
+2. 如需要添加任何模块，请在项目目录中运行类似命令`yarn add eis-module-xxx`'. 默认情况下[核心模块](https://github.com/eisjs/eis-module-core) 和[MongoDB模块](https://github.com/eisjs/eis-module-mongodb) 都已经添加.
 3. 运行命令以安装依赖'`yarn install`'.
 4. 运行项目'`yarn start`'.
 
