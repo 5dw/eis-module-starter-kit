@@ -6,7 +6,7 @@ This is the starter kit for the EIS system backend. All eis backend modules **sh
 # Database
 Before using this starter kit, please make sure the mongodb was installed on your system.
 
-The default database name was `eis_db_dev1` which can be changed in the configuration file for each environment.For more information please see the [eis-module-mongodb](https://gitlab.com/eis-modules/eis-module-mongodb) module.
+The default database name was `eis_db_dev1` which can be changed in the configuration file for each environment.For more information please see the [eis-module-mongodb](https://github.com/eisjs/eis-module-mongodb) module.
 
 # Usage
 1. Download the [EIS backend starter kit](https://www.npmjs.com/package/eis-module-starter-kit).
